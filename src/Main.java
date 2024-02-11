@@ -12,13 +12,11 @@ public class Main {
         Task task4 = new Task("4", null);
         Task task5 = new Task("5", LocalDateTime.of(2024, 2, 11, 15, 0));
 
-
         prioritizedTasks.add(task1);
         prioritizedTasks.add(task2);
         prioritizedTasks.add(task3);
         prioritizedTasks.add(task4);
         prioritizedTasks.add(task5);
-
 
         for (Task prioritizedTask : prioritizedTasks) {
             System.out.println(prioritizedTask.name + " " + prioritizedTask.start);

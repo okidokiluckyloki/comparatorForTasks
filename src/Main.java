@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Set<Task> prioritizedTasks = new TreeSet<>(new CustomComparator());
 
-        Task task1 = new Task("1", LocalDateTime.of(2024, 2, 11, 19, 0));
-        Task task2 = new Task("2", LocalDateTime.of(2024, 2, 11, 20, 0));
-        Task task3 = new Task("3", null);
-        Task task4 = new Task("4", null);
-        Task task5 = new Task("5", LocalDateTime.of(2024, 2, 11, 15, 0));
+        Task task1 = new Task("t1", LocalDateTime.of(2024, 2, 11, 19, 0));
+        Task task2 = new Task("t2", LocalDateTime.of(2024, 2, 11, 20, 0));
+        Task task3 = new Task("t3", null);
+        Task task4 = new Task("t4", null);
+        Task task5 = new Task("t5", LocalDateTime.of(2024, 2, 11, 15, 0));
 
         prioritizedTasks.add(task1);
         prioritizedTasks.add(task2);
@@ -21,6 +21,5 @@ public class Main {
         for (Task prioritizedTask : prioritizedTasks) {
             System.out.println(prioritizedTask.name + " " + prioritizedTask.start);
         }
-
     }
 }

@@ -21,5 +21,6 @@ public class Main {
         for (Task prioritizedTask : prioritizedTasks) {
             System.out.println(prioritizedTask.name + " " + prioritizedTask.start);
         }
+
     }
 }
